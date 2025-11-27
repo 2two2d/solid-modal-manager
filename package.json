@@ -1,0 +1,33 @@
+{
+  "name": "@2two2d/solid-modal-manager",
+  "version": "1.0.6",
+  "description": "Simple, typed and powerful modal manager for SolidJS",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "solid": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["solidjs", "solid", "modal", "dialog", "portal", "manager"],
+  "author": "2two2d",
+  "license": "MIT",
+  "peerDependencies": {
+    "solid-js": "^1.8.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.5.0"
+  }
+}
